@@ -1,5 +1,10 @@
 USE app_db;
 
+DROP TABLE IF EXISTS licence;
+DROP TABLE IF EXISTS prestataire;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS password;
+
 CREATE TABLE licence (
   id_licence int PRIMARY KEY AUTO_INCREMENT,
   id_instance int,
