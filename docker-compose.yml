@@ -13,6 +13,8 @@ services:
       - "6033:3306"
     volumes:
       - dbdata:/var/lib/mysql
+      - ./init.sql:/init.sql
+      - ./init_db.sh:/init_db.sh
     networks:
       - mynetwork
 
